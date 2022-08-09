@@ -33,6 +33,7 @@ try:
     button_pad = buttons.Buttons(BTN_X, BTN_Y, BTN_A, BTN_B)
     highscore = score.Score(pacman_score_sprites)
     chosen_map = pacman_map.PacmanMap(pacman_map_sprites)
+
     pacman_character = pacman_himself.PacmanHimself(
         pacman_character_sprites, chosen_map, WIDTH, HEIGHT)
     cheese = cheese_logic.Cheese(pacman_cheese_sprites, pacman_character, highscore, pacman_map.cheese_map1)
@@ -76,6 +77,7 @@ try:
 
         if cheese.check_victory():
             announcer.victory()
+            break
 
         for ghost in ghosts:
             if ghost.check_collision():
