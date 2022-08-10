@@ -13,3 +13,8 @@ copy pacman and general folders to (/) root folder on badge
 copy lib/adafruit_imageload folder to lib folder on badge
 ```
 
+# Disclaimer
+
+I did not finish with what I had envisioned in the todo.
+
+Consider this a <i><b>pre alpha beta version 0.0.1</i></b>.
